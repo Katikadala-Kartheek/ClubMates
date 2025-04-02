@@ -1,0 +1,22 @@
+﻿@model IEnumerable<ClubMates.Models.Student>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div>
+    <h1>Student Details</h1>
+</div>
+<div>
+    @foreach (var stu in Model)
+    {
+        <div>
+            Student Name: @stu.StudentID
+        </div>
+    }
+    <a href="home/Addstudent">AddStudent</a>
+    <br />
+    <a href="/Department">Department</a>
+</div>
+
+
